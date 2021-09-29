@@ -1,4 +1,4 @@
-const baseUrl = 'http://localhost/casamento'
+const baseUrl = 'https://api.pauloefabiana.com/'
 
 class BaseService {
   static baseUrl() {

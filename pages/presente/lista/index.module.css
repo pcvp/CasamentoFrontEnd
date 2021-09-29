@@ -12,3 +12,7 @@
   overflow: hidden;
   text-overflow: ellipsis;
 }
+
+.card {
+  height: 310px;
+}

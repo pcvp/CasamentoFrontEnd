@@ -71,7 +71,7 @@ export default function listaDePresentes({ json }) {
   })
 
   const container = (
-    <div className={style.overflowXHidden + ' my-5 py-2 mx-2'}>
+    <div className={style.overflowXHidden + ' py-5 mx-2'}>
       <div className='row'>{presentes}</div>
     </div>
   )

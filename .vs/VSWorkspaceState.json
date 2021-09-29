@@ -1,0 +1,17 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\pages",
+    "\\pages\\convidado",
+    "\\pages\\convidado\\pesquisarNome",
+    "\\pages\\home",
+    "\\pages\\layout",
+    "\\pages\\presente",
+    "\\pages\\presente\\apresentacao",
+    "\\pages\\presente\\confirmar",
+    "\\pages\\presente\\lista",
+    "\\pages\\presente\\visualizar"
+  ],
+  "SelectedNode": "\\pages\\presente\\lista\\index.tsx",
+  "PreviewInSolutionExplorer": false
+}

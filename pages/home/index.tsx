@@ -29,7 +29,7 @@ export default function Home() {
         </a>
 
         <Link href='/presente/apresentacao' passHref>
-          <div className='link col-6 col-md-3 mt-4 d-flex flex-column fs-6 fs-md-5'>
+          <div className='link col-6 col-md-3 mt-4 mt-md-5 d-flex flex-column fs-6 fs-md-5'>
             <i className={Style.icone + ' fal fa-gift icone'}></i>
             Lista de presentes
           </div>

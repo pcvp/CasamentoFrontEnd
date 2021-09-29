@@ -21,7 +21,7 @@ export async function getStaticProps() {
 
 export default function listaDePresentes({ json }) {
   const presentesJson = JSON.parse(json)
-
+  console.log(presentesJson)
   if (presentesJson.length == 0) {
     return (
       <div className='d-flex flex-column justify-content-around vh-100'>
@@ -46,10 +46,6 @@ export default function listaDePresentes({ json }) {
       <div className='px-4 text-center mb-1 d-flex flex-column justify-content-between'>
         <p className='fs-3'>Nós separamos os links para vocês :)</p>
         <p className='fs-5 my-2'>Mas fiquem a vontade se quiserem comprar em outro lugar.</p>
-        <p className='fs-5'>
-          Nossa cozinha será toda <br />
-          <strong>preta e branca.</strong>
-        </p>
 
         <Link href='/presente/lista' passHref={true}>
           <button className='btn btn-primary mx-auto rounded' style={{ width: 38 }}>

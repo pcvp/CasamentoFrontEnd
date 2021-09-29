@@ -38,6 +38,10 @@ export default function listaDePresentes({ json }) {
           </div>
         </div>
 
+        <div className={'mx-3 my-4 alert alert-primary' + (!presente.ExibirAlertaDeCor ? ' d-none' : '')} role='alert'>
+          Vamos deixar nossa cozinha toda <strong>preta e branca.</strong> Se você puder, nos ajude!
+        </div>
+
         <div className='d-flex'>
           <Link href={presente.UrlDaLoja} passHref={true}>
             <button className='btn btn-link mx-auto rounded mb-3 text-decoration-none'>Visitar loja</button>
@@ -47,9 +51,9 @@ export default function listaDePresentes({ json }) {
           </Link>
         </div>
       </div>
-      <div className='mt-5'>
+      <div className='mt-4 mt-md-5'>
         <Link href='/presente/lista' passHref={true}>
-          <span className='btn btn-link btn-sm fs-6 w-100 mr-1 mt-5 text-decoration-none'>Voltar</span>
+          <span className='btn btn-link btn-sm fs-6 w-100 mr-1 mt-md-5 text-decoration-none'>Voltar</span>
         </Link>
       </div>
     </div>

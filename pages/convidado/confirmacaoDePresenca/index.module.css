@@ -1,0 +1,20 @@
+a.link {
+  text-decoration: none;
+  color: #000;
+}
+
+.icone {
+  font-size: 30px;
+  color: #2a42b9;
+  margin-bottom: 0.3rem;
+}
+
+.nomeNoivos {
+  font-family: "Great Vibes", cursive;
+  font-size: 30px;
+}
+
+.dataCasamento {
+  font-family: "Great Vibes", cursive;
+  font-size: 25px;
+}

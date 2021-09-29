@@ -1,0 +1,14 @@
+.imagemPresente {
+  width: 150px;
+  margin: 0 auto;
+}
+
+.overflowXHidden {
+  overflow-x: hidden;
+}
+
+.cardTitle {
+  height: 50px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

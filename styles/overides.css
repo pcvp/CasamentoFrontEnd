@@ -1,0 +1,19 @@
+.fixed-top {
+  z-index: 1010;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #2a42b9;
+  border-color: #2a42b9;
+}
+
+.btn-primary:hover {
+  background-color: darken(#2a42b9, 10%);
+  border-color: darken(#2a42b9, 10%);
+}
+
+.btn-primary:focus {
+  background-color: darken(#2a42b9, 12%);
+  border-color: darken(#2a42b9, 12%);
+}

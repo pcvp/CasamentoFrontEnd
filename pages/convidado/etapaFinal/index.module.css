@@ -1,0 +1,6 @@
+.qrCode {
+  width: 60vw !important;
+  height: 60vw !important;
+  max-width: 150px !important;
+  max-height: 150px !important;
+}

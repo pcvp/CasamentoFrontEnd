@@ -48,9 +48,9 @@ export default function listaDePresentes({ json }) {
         <p className='fs-5 my-2'>Mas fiquem a vontade se quiserem comprar em outro lugar.</p>
 
         <Link href='/presente/lista' passHref={true}>
-          <button className='btn btn-primary mx-auto rounded' style={{ width: 38 }}>
+          <a className='btn btn-primary mx-auto rounded' style={{ width: 38 }}>
             <i className='fas fa-arrow-right'></i>
-          </button>
+          </a>
         </Link>
       </div>
     </div>

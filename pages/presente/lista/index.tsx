@@ -5,7 +5,7 @@ import Link from 'next/link'
 export async function getStaticProps() {
   const resource = '/presentes'
 
-  const res = await fetch(BaseApi.baseUrl() + resource + '/ObterPresentes', {
+  const res = await fetch(BaseApi.baseUrl() + resource + '/ObterPresentes?now=' + Date.now(), {
     headers: {
       'Content-Type': 'application/json',
       Accept: 'application/json'

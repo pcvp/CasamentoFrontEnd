@@ -48,7 +48,7 @@ export default function listaDePresentes({ json }) {
 
   const presentes = presentesJson.map((item, i) => {
     return (
-      <div className='col-6 col-sm-4 col-md-3 mb-2 mt-2' key={item.Id}>
+      <div className='col-6 col-sm-4 col-md-3 col-lg-2 mb-2 mt-2' key={item.Id}>
         {/* <a href={item.UrlDaLoja} target='_blank' rel='noreferrer'> */}
         <div className='card'>
           <img

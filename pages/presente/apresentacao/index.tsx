@@ -3,8 +3,9 @@ import BaseApi from '../../../services/BaseService'
 
 export async function getStaticProps() {
   const resource = '/presentes'
+  const now = Date.now()
 
-  const res = await fetch(BaseApi.baseUrl() + resource + '/ObterPresentes', {
+  const res = await fetch(BaseApi.baseUrl() + resource + '/ObterPresentes?now=' + now, {
     headers: {
       'Content-Type': 'application/json',
       Accept: 'application/json'
@@ -47,7 +48,7 @@ export default function listaDePresentes({ json }) {
         <p className='fs-3'>Nós separamos os links para vocês :)</p>
         <p className='fs-5 my-2'>Mas fiquem a vontade se quiserem comprar em outro lugar.</p>
 
-        <Link href='/presente/lista' passHref={true}>
+        <Link href={'/presente/lista?data=' + Date.now()} as='/presente/lista' passHref={true}>
           <a className='btn btn-primary mx-auto rounded' style={{ width: 38 }}>
             <i className='fas fa-arrow-right'></i>
           </a>

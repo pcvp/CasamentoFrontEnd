@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import BaseApi from '../../../services/BaseService'
 
-export async function getStaticProps() {
+export async function getServerSideProps(context) {
   const resource = '/presentes'
   const now = Date.now()
 

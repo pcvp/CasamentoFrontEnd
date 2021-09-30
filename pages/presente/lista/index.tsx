@@ -2,7 +2,7 @@ import BaseApi from '../../../services/BaseService'
 import style from './index.module.css'
 import Link from 'next/link'
 
-export async function getStaticProps() {
+export async function getServerSideProps(context) {
   const resource = '/presentes'
 
   const res = await fetch(BaseApi.baseUrl() + resource + '/ObterPresentes', {

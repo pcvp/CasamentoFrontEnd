@@ -61,8 +61,12 @@ export default function ConfirmacaoDePresenca({ json }) {
       <div className='row-pesquisa-convidados'>
         <div className='col-12 col-sm-12 col-md-8 offset-md-2 col-lg-4 offset-lg-4 mb-5 mt-4 pesquisa'>
           <div className='card p-3'>
-            <div className='card-title mb-3'>Por favor, selecione seu nome</div>
+            <div className={convidados.length > 0 ? 'card-title mb-3' : 'd-none'}>Por favor, selecione seu nome</div>
+            <div className={convidados.length == 0 ? 'card-title my-5 text-center' : 'd-none'}>
+              Infelizmente não foi possível encontrar seu nome na lista.
+            </div>
             <div className='input-group mb-3'>{convidados}</div>
+
             <div className='d-flex'>
               <Link href='/convidado/confirmacaoDePresenca' passHref={true}>
                 <span className='btn btn-link btn-sm fs-6 w-100 mr-1 text-decoration-none'>Voltar</span>

@@ -34,8 +34,16 @@ export default function ConfirmacaoDePresenca() {
               </Link>
               <Link
                 passHref={true}
-                as={nome.length > 0 ? `/convidado/pesquisarNome/${nome}` : ''}
-                href={nome.length > 0 ? `/convidado/pesquisarNome?nome=${nome}` : ''}
+                as={
+                  nome.length > 0
+                    ? `/convidado/pesquisarNome/${nome.normalize('NFD').replace(/[\u0300-\u036f]/g, '')}`
+                    : ''
+                }
+                href={
+                  nome.length > 0
+                    ? `/convidado/pesquisarNome?nome=${nome.normalize('NFD').replace(/[\u0300-\u036f]/g, '')}`
+                    : ''
+                }
               >
                 <span className='btn btn-primary btn-sm fs-6 w-100 ml-1 pesquisar-button'>Pesquisar</span>
               </Link>
